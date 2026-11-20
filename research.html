@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- Type pack (grotesk or serif) is set once, in js/theme.js. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Hoai Nhan Pham</title>
+<meta name="description" content="Research areas of Hoai Nhan Pham: medical AI with few labels and mixed data.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <a class="nav-name" href="index.html">Hoai Nhan Pham</a>
+  <a href="about.html">About</a>
+  <a href="research.html" aria-current="page">Research</a>
+  <a href="work.html">Work</a>
+</nav>
+
+<main>
+  <header class="page-head">
+    <h1>Research</h1>
+    <hr class="short-rule">
+    <p>Medical data is often far from perfect. Labels are few because experts are busy, and information is spread across images, health records and text. My work asks one question: how can a model learn well from the data we actually have?</p>
+  </header>
+
+  <section class="section flush-top" aria-label="Research areas">
+    <div class="wrap">
+      <!-- Each .chapter is one area. To add a figure, copy the <figure class="figure"> block from the original template. -->
+      <div class="chapters">
+        <article class="chapter">
+          <p class="when">AI VIET NAM · 12/2025 – now</p>
+          <h2>Segmentation with few labels</h2>
+          <p>Most histopathology images have no pixel-level labels. In CoDiR, the model's confidence guides a diffusion model that refines the predicted masks. In UniSemAlign, image features are aligned with text prototypes of each class. Both learn from a small labeled set and many unlabeled images.</p>
+          <div class="tags"><span class="tag">Semi-supervised</span><span class="tag">Diffusion</span><span class="tag">Histopathology</span></div>
+          <div class="links"><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_020.pdf">CoDiR</a><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Clinic2026/papers/Van_Thai_UniSemAlign_Text-Prototype_Alignment_with_a_Foundation_Encoder_for_Semi-Supervised_Histopathology_CVPRW_2026_paper.pdf">UniSemAlign</a></div>
+        </article>
+        <article class="chapter">
+          <p class="when">AI VIET NAM · 12/2025 – now</p>
+          <h2>Segmentation with weak labels</h2>
+          <p>Weak labels are cheaper than pixel masks, but they hold less information. I reproduced CAM-based methods and ran experiments on the BCSS-WSSS and LUAD-HistoSeg datasets for ProBAG.</p>
+          <div class="tags"><span class="tag">Weakly-supervised</span><span class="tag">CAM</span><span class="tag">Histopathology</span></div>
+          <div class="links"><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_027.pdf">ProBAG</a></div>
+        </article>
+        <article class="chapter">
+          <p class="when">Bachelor thesis · 2024 – 2025</p>
+          <h2>Graphs for health records</h2>
+          <p>Health records hold many linked facts about each patient. In my thesis, I used graph neural networks on electronic health records to predict diabetes. This work led to two papers at Vietnamese national conferences (FAIR 2024 and VNICT 2024).</p>
+          <div class="tags"><span class="tag">GNNs</span><span class="tag">Health records</span><span class="tag">Diabetes</span></div>
+          <div class="links"><a href="https://vap.ac.vn/proceedingvap/proceeding/article/view/1499">FAIR 2024</a><a href="https://hoithaoquocgiacntt.ac.vn/data/VNICT2024-Kyyeu-Mucluc.pdf">VNICT 2024</a></div>
+        </article>
+        <article class="chapter">
+          <p class="when">GONSA · 11/2023 – 11/2026</p>
+          <h2>Medical data in industry</h2>
+          <p>Drug data comes from many places and in many formats. I built pipelines to collect it, normalized drug names with rules and embeddings, and built a RAG system that answers questions from drug package inserts.</p>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Data pipelines</span></div>
+          <div class="links"><a href="work.html">Projects</a></div>
+        </article>
+        <article class="chapter">
+          <p class="when">2023 – 2025</p>
+          <h2>Earlier work</h2>
+          <p>Before medical segmentation, I worked on visual question answering, using a transformer with co-attention, and on skin lesion diagnosis with a graph segmentation algorithm.</p>
+          <div class="tags"><span class="tag">Transformers</span><span class="tag">VQA</span><span class="tag">Skin lesions</span></div>
+          <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-981-95-4963-4_30">VQA paper</a><a href="https://journal.hcmue.edu.vn/index.php/hcmuejos/article/view/3899">Skin lesion paper</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METHODS & TOOLS ============ -->
+  <section class="section tint" aria-labelledby="tools-h">
+    <div class="wrap" style="text-align:center">
+      <div class="section-head" style="margin-bottom:24px">
+        <h2 id="tools-h">Methods &amp; tools</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="tags" style="justify-content:center">
+        <span class="tag">Medical image segmentation</span><span class="tag">Semi/weakly-supervised learning</span><span class="tag">GNNs</span>
+        <span class="tag">Multimodal RAG</span><span class="tag">Explainable AI</span>
+        <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">LlamaIndex</span>
+        <span class="tag">OpenCV</span><span class="tag">Scikit-learn</span><span class="tag">NumPy</span>
+        <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">ChromaDB</span>
+        <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">LaTeX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COLLABORATION ============ -->
+  <section class="section" aria-labelledby="collab-h">
+    <div class="wrap" style="text-align:center">
+      <div class="section-head" style="margin-bottom:20px">
+        <h2 id="collab-h">Work with me</h2>
+        <hr class="short-rule">
+      </div>
+      <p class="prose">I am looking for a research Master's position in medical AI. I am also open to research collaborations and AI engineering roles.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:phamhoainhan312@gmail.com">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="index.html">© 2026 Hoai Nhan Pham</a>
+  <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
+  <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
+</footer>
+
+</body>
+</html>

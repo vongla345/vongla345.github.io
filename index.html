@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Type pack (grotesk or serif) is set once, in js/theme.js. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoai Nhan Pham · Medical AI</title>
+<meta name="description" content="Homepage of Hoai Nhan Pham, AI Engineer in Ho Chi Minh City working on medical AI that learns from imperfect data.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="work.html">Work</a>
+</nav>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <!-- 1. Photo: replace images/portrait-placeholder.svg with the real photo (roughly square, at least 600px) -->
+    <figure class="portrait"><img src="images/portrait-placeholder.svg" alt="Portrait of Hoai Nhan Pham" width="300" height="300"></figure>
+    <!-- 2. Name -->
+    <h1>Hoai Nhan Pham</h1>
+    <!-- 3. Field · place -->
+    <p class="kicker">Medical AI · Ho Chi Minh City</p>
+    <hr class="short-rule">
+    <!-- 4. One sentence -->
+    <p class="statement">I build medical AI that <strong>learns from imperfect data</strong>: few labels, many sources, many data types.</p>
+    <!-- 5. Profile links -->
+    <ul class="profile-links">
+      <li><a href="https://scholar.google.com/citations?user=7-VlO-gAAAAJ&amp;hl=en">Scholar</a></li>
+      <li><a href="https://github.com/vongla345">GitHub</a></li>
+      <li><a href="mailto:phamhoainhan312@gmail.com">Email</a></li>
+      <li><a href="files/cv.pdf">CV</a></li>
+    </ul>
+  </header>
+
+  <!-- ============ WHAT I WORK ON ============ -->
+  <section class="section" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work-h">What I work on</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="cols3">
+        <article class="col">
+          <h3>Learning with few labels</h3>
+          <p>Experts need a lot of time to label medical images. I build segmentation models that learn from a few labeled images and many unlabeled ones.</p>
+          <div class="tags"><span class="tag">Semi-supervised</span><span class="tag">Weakly-supervised</span><span class="tag">Histopathology</span></div>
+        </article>
+        <article class="col">
+          <h3>Using different kinds of data</h3>
+          <p>Medical information comes as images, health records and text. I use graphs and text to connect them, so a model can learn from more than one source.</p>
+          <div class="tags"><span class="tag">GNNs</span><span class="tag">Multimodal</span><span class="tag">Health records</span></div>
+        </article>
+        <article class="col">
+          <h3>From research to real tools</h3>
+          <p>In industry, I built data pipelines and a RAG system for drug documents. I want my research to become tools that people in medicine can use.</p>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">Data pipelines</span></div>
+        </article>
+      </div>
+      <p class="more"><a href="research.html">All research →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section class="section tint" aria-labelledby="sel-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="sel-h">Selected work</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <p class="when">2026 · Paper · Co-first author</p>
+          <h3><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_020.pdf">CoDiR: Confidence-Guided Diffusion Refinement for Semi-Supervised Histopathology Segmentation</a></h3>
+          <p>MICCAI 2026 Workshop (COMPAYL)</p>
+        </article>
+        <article class="entry">
+          <p class="when">2026 · Paper</p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Clinic2026/papers/Van_Thai_UniSemAlign_Text-Prototype_Alignment_with_a_Foundation_Encoder_for_Semi-Supervised_Histopathology_CVPRW_2026_paper.pdf">UniSemAlign: Text-Prototype Alignment with a Foundation Encoder for Semi-Supervised Histopathology Segmentation</a></h3>
+          <p>CVPR 2026 Workshops</p>
+        </article>
+        <article class="entry">
+          <p class="when">Project · GONSA</p>
+          <h3><a href="work.html">RAG search for drug package inserts</a></h3>
+          <p>Search and question answering over drug documents, tested with LLM-as-a-judge</p>
+        </article>
+      </div>
+      <p class="more"><a href="work.html">All work →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="wrap" style="text-align:center">
+      <div class="section-head" style="margin-bottom:20px">
+        <h2 id="contact-h">Get in touch</h2>
+        <hr class="short-rule">
+      </div>
+      <p class="prose">I am looking for a research Master's position in medical AI. I am also open to research collaborations and AI engineering roles. Email is the best way to reach me.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:phamhoainhan312@gmail.com">phamhoainhan312@gmail.com</a>
+        <a class="btn btn-line" href="files/cv.pdf">Download CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="index.html">© 2026 Hoai Nhan Pham</a>
+  <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
+  <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- Type pack (grotesk or serif) is set once, in js/theme.js. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Hoai Nhan Pham</title>
+<meta name="description" content="Background, education and experience of Hoai Nhan Pham.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <a class="nav-name" href="index.html">Hoai Nhan Pham</a>
+  <a href="about.html" aria-current="page">About</a>
+  <a href="research.html">Research</a>
+  <a href="work.html">Work</a>
+</nav>
+
+<main>
+  <header class="page-head">
+    <h1>About</h1>
+    <hr class="short-rule">
+  </header>
+
+  <section class="section flush-top">
+    <div class="prose">
+      <p>I am an AI Engineer from Ho Chi Minh City, Vietnam. I work on medical AI, with a focus on data that is far from perfect: few labels, many sources and many data types.</p>
+      <p>I studied Computer Science at Ho Chi Minh City University of Education. For my bachelor thesis, I used graph neural networks to predict diabetes from electronic health records. Since December 2025, I have been a research member at AI VIET NAM, where I work on semi- and weakly-supervised segmentation of histopathology images. This work led to papers at a MICCAI workshop and a CVPR workshop in 2026.</p>
+      <p>I also have industry experience. At GONSA, I built data pipelines for medical data, cleaned and matched drug data, and built a RAG system for drug package inserts. I have also taught Python and 3D design to students.</p>
+      <p>I am now looking for a research Master's position. If you work on medical AI with limited or mixed data, I would be glad to hear from you.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="files/cv.pdf">Download CV</a>
+      <a class="btn btn-line" href="index.html#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" aria-labelledby="edu-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="edu-h">Education</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <p class="when">10/2021 – 05/2025 · Ho Chi Minh City University of Education</p>
+          <h3>B.Sc., Computer Science</h3>
+          <p>GPA: 3.6/4.0</p>
+          <p>Thesis: Diabetes Prediction from Electronic Health Records using Graph Neural Networks. Supervisor: Dr. Nguyen Minh Hai.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section tint" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="exp-h">Experience</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <p class="when">12/2025 – now · AI VIET NAM</p>
+          <h3>Research Member</h3>
+          <p>Semi- and weakly-supervised segmentation of histopathology images. Proposed CoDiR (co-first author) and ran experiments for UniSemAlign and ProBAG. Also studied explainable AI (xAI) methods.</p>
+        </article>
+        <article class="entry">
+          <p class="when">11/2023 – 11/2026 · GONSA</p>
+          <h3>Data Processing Specialist</h3>
+          <p>Built data pipelines from tender data, drug package inserts and Ministry of Health sources. Normalized drug names, ingredients and dosage forms. Built a RAG system for package inserts, tested with LLM-as-a-judge.</p>
+        </article>
+        <article class="entry">
+          <p class="when">06/2024 – 12/2025 · KASE EDUTECH</p>
+          <h3>Part-time Teaching Staff</h3>
+          <p>Built lessons on Python and 3D design with Blender. Guided student projects and assessed their work.</p>
+        </article>
+        <article class="entry">
+          <p class="when">07/2023 – 09/2023 · CONNECT PHARM</p>
+          <h3>Mobile Developer Intern</h3>
+          <p>Built app screens with Flutter. Managed MySQL databases and tested APIs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section" aria-labelledby="cert-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="cert-h">Certificates</h2>
+        <hr class="short-rule">
+      </div>
+      <div class="entries">
+        <article class="entry">
+          <p class="when">English</p>
+          <h3>IELTS Academic 7.0 (Overall)</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="index.html">© 2026 Hoai Nhan Pham</a>
+  <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
+  <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
+</footer>
+
+</body>
+</html>

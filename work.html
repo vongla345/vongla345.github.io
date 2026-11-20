@@ -1,0 +1,146 @@
+<!doctype html>
+<!-- Type pack (grotesk or serif) is set once, in js/theme.js. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work · Hoai Nhan Pham</title>
+<meta name="description" content="Papers and projects by Hoai Nhan Pham.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/theme.js"></script>
+<script src="js/filter.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <a class="nav-name" href="index.html">Hoai Nhan Pham</a>
+  <a href="about.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="work.html" aria-current="page">Work</a>
+</nav>
+
+<main>
+  <header class="page-head">
+    <h1>Work</h1>
+    <hr class="short-rule">
+    <p>Papers and projects, newest first. * means equal contribution.</p>
+  </header>
+
+  <section class="section flush-top" aria-label="Work list">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filter by type">
+        <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter" data-filter="paper" aria-pressed="false">Papers</button>
+        <button type="button" class="filter" data-filter="project" aria-pressed="false">Projects</button>
+      </div>
+
+      <section class="year-group" aria-labelledby="y2026">
+        <h2 class="year" id="y2026">2026</h2>
+        <article class="entry" data-type="paper">
+          <p class="when">Workshop paper · MICCAI 2026 Workshop (COMPAYL)</p>
+          <h3><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_020.pdf">CoDiR: Confidence-Guided Diffusion Refinement for Semi-Supervised Histopathology Segmentation</a></h3>
+          <p class="authors"><strong>Hoai Nhan Pham*</strong>, Dang-Nguyen Bui*, Le-Van Thai*, Thanh-Hiep Vo, Lan Anh Dinh Thi, Tien Dat Nguyen, Duy-Dong Nguyen, Ngoc Lam Quang Bui, Tam Tran, Zhi Huang</p>
+          <p>Uses the model's confidence to guide a diffusion model that refines segmentation masks, when only a few images are labeled.</p>
+          <div class="links"><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_020.pdf">PDF</a></div>
+        </article>
+        <article class="entry" data-type="paper">
+          <p class="when">Workshop paper · CVPR 2026 Workshops, pp. 6803–6813</p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Clinic2026/papers/Van_Thai_UniSemAlign_Text-Prototype_Alignment_with_a_Foundation_Encoder_for_Semi-Supervised_Histopathology_CVPRW_2026_paper.pdf">UniSemAlign: Text-Prototype Alignment with a Foundation Encoder for Semi-Supervised Histopathology Segmentation</a></h3>
+          <p class="authors">Le-Van Thai*, Tien Dat Nguyen*, <strong>Hoai Nhan Pham</strong>, Lan Anh Dinh Thi, Duy-Dong Nguyen, Ngoc Lam Quang Bui</p>
+          <p>Aligns image features with text prototypes of each class, on top of a foundation encoder, for segmentation with few labels.</p>
+          <div class="links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Clinic2026/papers/Van_Thai_UniSemAlign_Text-Prototype_Alignment_with_a_Foundation_Encoder_for_Semi-Supervised_Histopathology_CVPRW_2026_paper.pdf">PDF</a></div>
+        </article>
+        <article class="entry" data-type="paper">
+          <p class="when">Workshop paper · MICCAI 2026 Workshop (COMPAYL)</p>
+          <h3><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_027.pdf">ProBAG: Prototype-Guided Boundary-Aware Graph Diffusion for Weakly Supervised Histopathology Segmentation</a></h3>
+          <p class="authors">Duy-Dong Nguyen, Le-Van Thai, <strong>Hoai Nhan Pham</strong>, Ngoc Lam Quang Bui, Tam Tran, Zhi Huang</p>
+          <p>Uses prototypes and graph diffusion to get clearer tissue boundaries from weak labels.</p>
+          <div class="links"><a href="https://papers.miccai.org/miccai-2026-sat/paper/COMPAYL_027.pdf">PDF</a></div>
+        </article>
+      </section>
+
+      <section class="year-group" aria-labelledby="y2025">
+        <h2 class="year" id="y2025">2025</h2>
+        <article class="entry" data-type="paper">
+          <p class="when">Conference paper · International Conference on Multi-disciplinary Trends in Artificial Intelligence, Springer, pp. 363–374</p>
+          <h3><a href="https://link.springer.com/chapter/10.1007/978-981-95-4963-4_30">RPR-MCAoAN: A Transformer-Based Co-attention Network with Relative Positional Representations for Visual Question Answering</a></h3>
+          <p class="authors"><strong>Hoai Nhan Pham</strong>, Thai Gia Bao, Nguyen Minh Hai</p>
+          <p>A transformer that answers questions about images, using co-attention and relative position information.</p>
+          <div class="links"><a href="https://link.springer.com/chapter/10.1007/978-981-95-4963-4_30">Paper</a></div>
+        </article>
+        <article class="entry" data-type="project">
+          <p class="when">Bachelor thesis · Ho Chi Minh City University of Education</p>
+          <h3>Diabetes Prediction from Electronic Health Records using Graph Neural Networks</h3>
+          <p class="authors">Supervised by Dr. Nguyen Minh Hai</p>
+          <p>Turns health records into graphs and uses graph neural networks to predict diabetes.</p>
+          <div class="tags"><span class="tag">GNNs</span><span class="tag">Health records</span></div>
+        </article>
+      </section>
+
+      <section class="year-group" aria-labelledby="y2024">
+        <h2 class="year" id="y2024">2024</h2>
+        <article class="entry" data-type="paper">
+          <p class="when">Conference paper · FAIR 2024, pp. 217–222</p>
+          <h3><a href="https://vap.ac.vn/proceedingvap/proceeding/article/view/1499">Dự đoán bệnh dựa trên dữ liệu sức khỏe điện tử sử dụng mạng nơ-ron đồ thị</a></h3>
+          <p class="authors"><strong>Hoai Nhan Pham</strong>, Thai Gia Bao, et al.</p>
+          <p>In Vietnamese. Disease prediction from electronic health records using graph neural networks.</p>
+          <div class="links"><a href="https://vap.ac.vn/proceedingvap/proceeding/article/view/1499">Paper</a></div>
+        </article>
+        <article class="entry" data-type="paper">
+          <p class="when">Conference paper · VNICT 2024, pp. 155–161</p>
+          <h3><a href="https://hoithaoquocgiacntt.ac.vn/data/VNICT2024-Kyyeu-Mucluc.pdf">Dự đoán bệnh tiểu đường dựa trên dữ liệu sức khỏe điện tử sử dụng mạng nơ-ron đồ thị</a></h3>
+          <p class="authors">Thai Gia Bao, <strong>Hoai Nhan Pham</strong>, et al.</p>
+          <p>In Vietnamese. Diabetes prediction from electronic health records using graph neural networks.</p>
+          <div class="links"><a href="https://hoithaoquocgiacntt.ac.vn/data/VNICT2024-Kyyeu-Mucluc.pdf">Proceedings</a></div>
+        </article>
+      </section>
+
+      <section class="year-group" aria-labelledby="y2023">
+        <h2 class="year" id="y2023">2023</h2>
+        <article class="entry" data-type="paper">
+          <p class="when">Journal paper · Ho Chi Minh City University of Education Journal of Science, 20(10), 1761</p>
+          <h3><a href="https://journal.hcmue.edu.vn/index.php/hcmuejos/article/view/3899">Diagnosis of Skin Lesions based on Graph Segmentation algorithm</a></h3>
+          <p class="authors">Thai Gia Bao, <strong>Hoai Nhan Pham</strong>, Nguyen Phuong Nam, Nguyen Minh Hai</p>
+          <p>Uses a graph segmentation algorithm to find and diagnose skin lesions.</p>
+          <div class="links"><a href="https://journal.hcmue.edu.vn/index.php/hcmuejos/article/view/3899">Paper</a></div>
+        </article>
+      </section>
+
+      <section class="year-group" aria-labelledby="yind">
+        <h2 class="year" id="yind">Industry · GONSA, 2023 – 2026</h2>
+        <article class="entry" data-type="project">
+          <p class="when">Project · GONSA</p>
+          <h3>RAG search for drug package inserts</h3>
+          <p>A RAG system to search and ask questions about drug package inserts: indications, contraindications and active ingredients. Tested with LLM-as-a-judge.</p>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">Vector search</span></div>
+        </article>
+        <article class="entry" data-type="project">
+          <p class="when">Project · GONSA</p>
+          <h3>Drug data normalization</h3>
+          <p>Rule-based and embedding-based methods to normalize drug names, ingredients and dosage forms.</p>
+          <div class="tags"><span class="tag">Embeddings</span><span class="tag">Data cleaning</span></div>
+        </article>
+        <article class="entry" data-type="project">
+          <p class="when">Project · GONSA</p>
+          <h3>Medical data pipelines</h3>
+          <p>Pipelines that bring tender data, drug package inserts and Ministry of Health data into one data warehouse, with reports and clean data for other teams.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Data warehouse</span></div>
+        </article>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="index.html">© 2026 Hoai Nhan Pham</a>
+  <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
+  <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
+</footer>
+
+</body>
+</html>
