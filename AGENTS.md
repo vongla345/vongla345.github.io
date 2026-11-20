@@ -14,10 +14,10 @@ This copy of Sciencefolio belongs to **Pham Hoai Nhan** (AI Engineer, Ho Chi Min
 
 - [ ] Portrait photo: owner will send one. Replace `images/portrait-placeholder.svg` (keep the `<img>` path in `index.html` in sync).
 - [ ] Accent color: not chosen yet. Preview with `?accent=cobalt|forest|rust|violet|none`. After choosing, set it in `css/tokens.css` and delete the temporary block in `js/theme.js`.
-- [ ] `files/cv.pdf` is the owner's full CV and contains a phone number. Decide (with the owner) before publishing: remove the phone number, or keep it.
+- [x] `files/cv.pdf`: owner chose to keep the full CV, phone number included (decided 2026-11-20).
 - [ ] Paper one-line descriptions on the Work and Research pages are based on titles and the CV. Owner should check they are correct.
 
-Decisions so far: name "Hoai Nhan Pham" (matches papers); type pack grotesk; Work page keeps the label "Work" with Papers and Projects filters; statement "I build medical AI that learns from imperfect data: few labels, many sources, many data types."; Scholar profile user=7-VlO-gAAAAJ; IELTS shows overall only; no phone number on pages.
+Decisions so far: name "Hoai Nhan Pham" (matches papers); type pack grotesk; Work page keeps the label "Work" with Papers and Projects filters; statement "I build medical AI that learns from imperfect data: few labels, many sources, many data types."; Scholar profile user=7-VlO-gAAAAJ; IELTS shows overall only; no phone number on pages (the CV PDF keeps it, by owner's choice); GitHub repo `vongla345/vongla345.github.io`, site at https://vongla345.github.io.
 
 # Instructions for AI assistants
 
